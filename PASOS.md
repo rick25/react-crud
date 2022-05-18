@@ -38,3 +38,5 @@ rails db:seed
         end
     end
 
+## creo el frontend con react
+npx create-react-app frontend --template redux-typescript
