@@ -40,3 +40,8 @@ rails db:seed
 
 ## creo el frontend con react
 npx create-react-app frontend --template redux-typescript
+
+## modifico el archivo post_controller.rb para que trabaje como quiero
+    skip_before_action :verify_authenticity_token   # agrego en la linea 3 para que salte la verificacion de la autenticidad del token
+    format.json { render json: Post.all, status: :ok }  # modifico la linea 57 para que al eliminar un post, me devuelva todos los post con un status ok
+    params.require(:post).permit(:title, :body, :id)    # modifico la linea 69 para q me pida en la creacion de un post el id
