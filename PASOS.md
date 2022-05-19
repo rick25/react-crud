@@ -45,3 +45,7 @@ npx create-react-app frontend --template redux-typescript
     skip_before_action :verify_authenticity_token   # agrego en la linea 3 para que salte la verificacion de la autenticidad del token
     format.json { render json: Post.all, status: :ok }  # modifico la linea 57 para que al eliminar un post, me devuelva todos los post con un status ok
     params.require(:post).permit(:title, :body, :id)    # modifico la linea 69 para q me pida en la creacion de un post el id
+
+## instalo bootstrap 5 en el frontend lineas 24 y 25 de ./frontend/public/index.hmtl
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

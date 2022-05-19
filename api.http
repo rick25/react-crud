@@ -1,0 +1,2 @@
+### get all post
+GET http://localhost:3000/posts.json
